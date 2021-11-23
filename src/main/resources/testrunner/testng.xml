@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Orange HRM Application Test Automation" verbose="1" >	
+
+	<listeners>
+		<listener class-name="com.hrm.qa.listeners.ExtentReportListener" />
+		<listener class-name="com.hrm.qa.listeners.TestAllureListener" />
+	</listeners>
+    <test name="Orange HRM Application Test Cases">	
+        <classes>
+            <class name="com.hrm.qa.test_cases.LoginPageTest" />
+            <class name="com.hrm.qa.test_cases.DashboardPageTest" /> 
+            <class name="com.hrm.qa.test_cases.AdminPageTest" />    
+        </classes>
+    </test>
+</suite>
